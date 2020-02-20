@@ -13,7 +13,7 @@ Java.perform(function() {
   
   YourClass.Method.implementation = function() { // or using Interceptor.attach
     var stack = ThreadInstance.currentThread().getStackTrace(); // stack[3] is caller
-    console.log(stack[3] + " Called This Method!");
+    console.log(stack[3] + " Call This Method!");
     
     /* if u want seeing call stack */
     var full_call_stack = arrange(stack);
