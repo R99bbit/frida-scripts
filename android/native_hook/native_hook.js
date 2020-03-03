@@ -7,3 +7,7 @@ Interceptor.attach(Module.findExportByName(/* so file */, /* native function */)
     /* return modify */
   }
 });
+
+Interceptor.replace(Module.findExportByName(/* so file */, new NativeCallback(function(arg1, arg2) {
+  /* call back */
+});
